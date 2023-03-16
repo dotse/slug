@@ -46,7 +46,7 @@ func TestHandler(t *testing.T) {
 				slog.Uint64("uint64", 123456),
 			},
 			Patterns: []string{
-				`^[+,:T\d-]{20,} +ERROR +test message with attributes`,
+				`^[+,:TZ\d-]{20,} +ERROR +test message with attributes`,
 				`\sany=127.0.0.1\b`,
 				`\sbool=true\b`,
 				`\sduration=1h30m0s\b`,
@@ -73,7 +73,7 @@ func TestHandler(t *testing.T) {
 				),
 			},
 			Patterns: []string{
-				`^[+,:T\d-]{20,} +WARN +group test `,
+				`^[+,:TZ\d-]{20,} +WARN +group test `,
 				`\soutside=foo\b`,
 				`\sgroup\.inside=bar\b`,
 				`\sgroup\.inside-int=42\b`,
@@ -91,7 +91,7 @@ func TestHandler(t *testing.T) {
 				),
 			},
 			Patterns: []string{
-				`^[+,:T\d-]{20,} +INFO +logger with group `,
+				`^[+,:TZ\d-]{20,} +INFO +logger with group `,
 				`\sgroup\.foo=bar\b`,
 				`\sgroup\.bar\.foo=qux\b`,
 			},
@@ -104,7 +104,7 @@ func TestHandler(t *testing.T) {
 				slog.String("emoji", "😻"),
 			},
 			Patterns: []string{
-				`^[+,:T\d-]{20,} +WARN +message\\twith\\r\\nnon-printableU\+2003characters`,
+				`^[+,:TZ\d-]{20,} +WARN +message\\twith\\r\\nnon-printableU\+2003characters`,
 				`\semoji=😻`,
 			},
 		},
