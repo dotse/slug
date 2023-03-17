@@ -3,6 +3,8 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/dotse/slug.svg)](https://pkg.go.dev/github.com/dotse/slug)
 ![GitHub](https://img.shields.io/github/license/dotse/slug?style=flat-square)
 
+![](./doc/img/slug.svg)
+
 Slug is a [`slog.Handler`] that writes human-readable logs.
 
 ⚠ [`slog`] isn’t finalised yet. Slug is even more unstable.
