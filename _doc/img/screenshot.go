@@ -10,11 +10,11 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"log/slog"
 	"os"
 	"time"
 
 	"github.com/dotse/slug"
-	"golang.org/x/exp/slog"
 )
 
 func main() {
