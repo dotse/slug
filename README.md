@@ -27,5 +27,5 @@ Slug is a [`slog.Handler`] that writes human-readable logs.
 
     The output is meant for human eyes only, not to be parsed
 
-[`slog`]: https://pkg.go.dev/golang.org/x/exp/slog
-[`slog.Handler`]: https://pkg.go.dev/golang.org/x/exp/slog#Handler
+[`slog`]: https://pkg.go.dev/log/slog
+[`slog.Handler`]: https://pkg.go.dev/log/slog#Handler
