@@ -3,16 +3,16 @@ package slug_test
 import (
 	"context"
 	"errors"
+	"log/slog"
 	"net/netip"
 	"regexp"
 	"strings"
 	"testing"
 	"time"
 
-	log "github.com/dotse/slug"
+	"github.com/dotse/slug"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"golang.org/x/exp/slog"
 )
 
 func TestHandler(t *testing.T) {
@@ -116,7 +116,7 @@ func TestHandler(t *testing.T) {
 
 			var (
 				buffer strings.Builder
-				h      = log.NewHandler(log.HandlerOptions{
+				h      = slug.NewHandler(slug.HandlerOptions{
 					HandlerOptions: slog.HandlerOptions{
 						AddSource: true,
 					},

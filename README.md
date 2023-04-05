@@ -7,7 +7,7 @@
 
 Slug is a [`slog.Handler`] that writes human-readable logs.
 
-⚠ [`slog`] isn’t finalised yet. Slug is even more unstable.
+⚠ Slug is still in early development and can be a bit unstable.
 
 ![](./_doc/img/screenshot.png)
 
@@ -27,5 +27,4 @@ Slug is a [`slog.Handler`] that writes human-readable logs.
 
     The output is meant for human eyes only, not to be parsed
 
-[`slog`]: https://pkg.go.dev/golang.org/x/exp/slog
-[`slog.Handler`]: https://pkg.go.dev/golang.org/x/exp/slog#Handler
+[`slog.Handler`]: https://pkg.go.dev/log/slog#Handler
