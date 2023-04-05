@@ -4,13 +4,13 @@ import (
 	"context"
 	"fmt"
 	"io"
+	"log/slog"
 	"runtime"
 	"strings"
 	"sync"
 
 	"github.com/dotse/slug/internal"
 	"github.com/logrusorgru/aurora/v4"
-	"golang.org/x/exp/slog"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
 )
