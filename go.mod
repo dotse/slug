@@ -6,8 +6,8 @@ require (
 	github.com/logrusorgru/aurora v2.0.3+incompatible
 	github.com/logrusorgru/aurora/v4 v4.0.0
 	github.com/stretchr/testify v1.8.2
-	golang.org/x/exp v0.0.0-20230315142452-642cacee5cc0
-	golang.org/x/text v0.8.0
+	golang.org/x/exp v0.0.0-20230420155640-133eef4313cb
+	golang.org/x/text v0.9.0
 )
 
 require (

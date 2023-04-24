@@ -93,8 +93,9 @@ func (h *Handler) Handle(_ context.Context, r slog.Record) error {
 		h.printAttr(prefix, attr)
 	}
 
-	r.Attrs(func(attr slog.Attr) {
+	r.Attrs(func(attr slog.Attr) bool {
 		h.printAttr(prefix, attr)
+		return true
 	})
 
 	if h.shared.options.AddSource && r.PC != 0 {
