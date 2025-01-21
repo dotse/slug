@@ -17,7 +17,7 @@ import (
 
 const (
 	// DefaultTimeFormat is the default format for any [time.Time] logged.
-	DefaultTimeFormat = "2006-01-02T15:04:05,000Z07:00"
+	DefaultTimeFormat = "2006-01-02T15:04:05,999Z07:00"
 )
 
 var (
