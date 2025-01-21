@@ -42,7 +42,7 @@ func TestHandler(t *testing.T) {
 				slog.Int("int", -123_456),
 				slog.Int64("int64", 42),
 				slog.String("string", "a string"),
-				slog.Time("time", time.Date(2000, 1, 2, 3, 4, 5, 6, time.UTC)),
+				slog.Time("time", time.Date(2000, 1, 2, 3, 4, 5, 6, time.UTC).Add(123_456*time.Microsecond)),
 				slog.Uint64("uint64", 123456),
 			},
 			Patterns: []string{
@@ -57,7 +57,7 @@ func TestHandler(t *testing.T) {
 				`\sint=-123,456\b`,
 				`\sline=\d+\b\b`,
 				`\sstring=a string\b`,
-				`\stime=2000-01-02T03:04:05,000Z\b`,
+				`\stime=2000-01-02T03:04:05,123Z\b`,
 				`\suint64=123,456\b`,
 			},
 		},
